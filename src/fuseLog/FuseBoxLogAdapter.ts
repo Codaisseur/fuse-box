@@ -34,6 +34,10 @@ export class FuseBoxLogAdapter extends FuseLog {
     this._warnings = [];
     this._errors = [];
     onExit('logging', () => {
+       props.onExit && props.onExit({
+        warnings: this._warnings,
+        errors: this._errors
+      })
       console.log('');
     });
     this.startTimeMeasure();
