@@ -125,7 +125,6 @@
     "changelog:generate": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "codecov": "codecov",
     "commit": "git-cz",
-    "commitmsg": "validate-commit-msg",
     "coverage": "jest --verbose --coverage",
     "coverage-ci": "jest --verbose --coverage --runInBand",
     "devDeps": "gulp installDevDeps",
@@ -140,5 +139,5 @@
     "typecheck": "ts-node -T fuse typecheck"
   },
   "typings": "index.d.ts",
-  "version": "4.0.1-next.1"
+  "version": "4.0.1"
 }
